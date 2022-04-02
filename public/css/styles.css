@@ -1,0 +1,253 @@
+.bg-main-blue {
+    background-color: #004274;
+}
+
+
+.btn-main {
+    padding: 1% 3%;
+    color: #fff;
+    border-radius: 3%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #004274;
+}
+
+.btn-blue:hover {
+    background-color: #fff;
+    color: #004274;
+}
+
+.link-main {
+    color: #000;
+    line-height: 1.5;
+}
+
+.link-main:hover {
+    color: #004274;
+    cursor: pointer;
+}
+
+.link-main:active {
+    color: #004274;
+}
+
+.text-blue {
+    color: #004274;
+    font-weight: bolder;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    background: #EAEDF2;
+}
+
+.hero {
+    width: 90%;
+    margin: 8% auto;
+}
+
+.hero h2 {
+    color: #979B9F;
+}
+
+.card {
+    padding: 0;
+    margin-left: 1%;
+    width: 46%;
+}
+
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card-1 {
+    background: url('../images/bg/bitcoin-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+
+.title-card-2 {
+    background: url('../images/bg/forex-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+
+/* contact form */
+.form-area {
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 10%;
+    /* justify-content: space-between; */
+    height: 50vh;
+}
+
+.contact {
+    width: 48%;
+}
+
+.contact-text {
+    font-size: larger;
+}
+
+.contact-text h4 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.contact-text p{
+    font-size: x-large;
+}
+
+.contact-form {
+    border: #979B9F solid 1px;
+    /* padding: 1%; */
+    height: 140%;
+}
+
+.contact-form form {
+    width: 100%;
+    padding: 5%;
+    height: 90%;
+}
+
+.form-input {
+    margin: 4% auto;
+}
+
+.form-input label{
+    color: #262626;
+    font-weight: bolder;
+}
+
+.form-input input[type=text] {
+    border: none;
+    border-bottom: #979B9F solid 1px;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.form-input input[type=text]:focus {
+    outline: none;
+}
+
+.form-message-input {
+    width: 100%;
+    border: none;
+}
+
+.form-message-input:focus {
+    outline: none;
+}
+
+.form-btn {
+    padding: 2%;
+    width: 100%;
+    border: none;
+}
+
+.btn-black {
+    background-color: #262626;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter {
+    background: rgba(255, 255, 255, .4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    height: 150px;
+    width: 95%;
+    color: #979B9F;
+    padding: 4%;
+}
+
+.heading {
+    color: #004274;
+}
+
+.heading-baseline {
+    color: #000;
+}
+
+.title-text {
+    padding-top: 20%;
+}
+
+.vl {
+    background-color: #004274;
+    height: 80%;
+    margin-right: 2%;
+    margin-left: 6%;
+    width: 6px;
+}
+
+.strip {
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.strip-collection {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.strip-collection img {
+    width: 100px;
+}
+
+/* footer */
+footer {
+    color: #fff;
+    display: flex;
+}
+
+footer .col-4{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: auto 0;
+}
+
+footer .col-4 a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
