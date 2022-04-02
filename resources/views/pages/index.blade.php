@@ -148,10 +148,23 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="icon-box">
-                            <img class="icon" src="https://energyglobalinvestment.com/img/icons/h1.png">
+                            <img class="icon" src="{{ asset('images/icons/h1.png') }}">
                         </div>
                         <h5>Choose an investment account</h5>
                         <div class="text">Get to the signup page, fill in the information with valid credentials. A verification link will be sent to your email, click and activate youe trading account</div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#accountModal" id="infoBtn">
+                            View Plan Details
+                          </button>
+                          <script>
+                              document.querySelector('#infoBtn').addEventListener('click', () => {
+                                Swal.fire({
+                                        title: 'Plan Details',
+                                        html: "<p>Basic Account: 1000 - 5000<br>Duration for withdrawal is after 30 days of your investment<br>Standard Account: 10,000 - 25,000<br>Duration for withdrawal is after 30 days of your investment<br>Premium Account: 25, 000 - 50,000 Duration for withdrawal is after 30 days of your investment</p>",
+                                        icon: 'info',
+                                        closeButtonText: 'close'
+                                    });
+                              });
+                            </script>
                     </div>
                 </div>
                 
@@ -159,7 +172,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="icon-box">
-                            <img class="icon" src="https://energyglobalinvestment.com/img/icons/h2.png">
+                            <img class="icon" src="{{ asset('images/icons/h2.png') }}">
                         </div>
                         <h5>Fund you account</h5>
                         <div class="text">after succesful account registration talk to any of our financial experts on the stock you want to invest your capital in. Next thing is to fund your wallet, which can be done with a manual Bitcoin transfer or payment made with a credit card.</div>
@@ -170,7 +183,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="icon-box">
-                            <img class="icon" src="https://energyglobalinvestment.com/img/icons/h3.png">
+                            <img class="icon" src="{{ asset('images/icons/h3.png') }}">
                         </div>
                         <h5>Carry out transaction</h5>
                         <div class="text">Withdrawals are made easy on our current system, fill out the amount you to want to withdraw, you will be prompted to fill out your third party wallet or bank account.</div>
@@ -183,6 +196,31 @@
     </div>
 </div>
 <!-- End Services Section -->
+<div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="accountModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="accountModalLongTitle">Plan Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Basic Account: 1000 - 5000
+          Duration for withdrawal is after 30 days of your investment
+          <hr>
+          Standard Account: 10,000 - 25,000
+          Duration for withdrawal is after 30 days of your investment
+          <hr>
+          Premium Account: 25, 000 - 50,000
+          Duration for withdrawal is after 30 days of your investment
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {{-- <!-- Project Section -->
 <div class="project-section">
